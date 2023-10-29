@@ -238,69 +238,23 @@ public class Janela {
         container.gridwidth = 2;
         panel.add(btn_concluir,container);
 
-        forAtr.addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                forcaGet.setText(String.valueOf(forAtr.getValue()));
-            }
-        });
+        forAtr.addChangeListener(e -> forcaGet.setText(String.valueOf(forAtr.getValue())));
 
-        constAtr.addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                constGet.setText(String.valueOf(constAtr.getValue()));
-            }
-        });
+        constAtr.addChangeListener(e -> constGet.setText(String.valueOf(constAtr.getValue())));
 
-        desAtr.addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                desGet.setText(String.valueOf(desAtr.getValue()));
-            }
-        });
+        desAtr.addChangeListener(e -> desGet.setText(String.valueOf(desAtr.getValue())));
 
-        agiAtr.addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                agiGet.setText(String.valueOf(agiAtr.getValue()));
-            }
-        });
+        agiAtr.addChangeListener(e -> agiGet.setText(String.valueOf(agiAtr.getValue())));
 
-        intAtr.addChangeListener(new ChangeListener(){
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                intGet.setText(String.valueOf(intAtr.getValue()));
-            }
-        });
+        intAtr.addChangeListener(e -> intGet.setText(String.valueOf(intAtr.getValue())));
 
-        forVontadeAtr.addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                forVontadeGet.setText(String.valueOf(forVontadeAtr.getValue()));
-            }
-        });
+        forVontadeAtr.addChangeListener(e -> forVontadeGet.setText(String.valueOf(forVontadeAtr.getValue())));
 
-        perAtr.addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                perGet.setText(String.valueOf(perAtr.getValue()));
-            }
-        });
+        perAtr.addChangeListener(e -> perGet.setText(String.valueOf(perAtr.getValue())));
 
-        carAtr.addChangeListener(new ChangeListener() {
-            @Override
-            public void stateChanged(ChangeEvent e) {
-                carGet.setText(String.valueOf(carAtr.getValue()));
-            }
-        });
+        carAtr.addChangeListener(e -> carGet.setText(String.valueOf(carAtr.getValue())));
 
-        btn_concluir.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                salvar();
-            }
-        });
-
+        btn_concluir.addActionListener(e -> salvar());
         panel.setBackground(Color.BLACK);
         panel.setForeground(Color.BLUE);
 
