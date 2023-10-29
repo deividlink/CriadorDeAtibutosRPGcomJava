@@ -305,7 +305,7 @@ public class Janela {
         String CAR = carGet.getText();
 
         if(!NM.isEmpty()) {
-            String atributos = "NOME: " + NM + '\n' +
+            return "NOME: " + NM + '\n' +
                     "FOR: " + FOR + '\n' +
                     "CON: " + CON + '\n' +
                     "DEX: " + DEX + '\n' +
@@ -314,7 +314,6 @@ public class Janela {
                     "WILL: " + WILL + '\n' +
                     "PER: " + PER + '\n' +
                     "CAR: " + CAR + '\n';
-            return atributos;
         }else {
             return null;
         }
